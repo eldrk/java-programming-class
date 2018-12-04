@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=java_20180731/C:\/Program Files\/Java\/jre1.8.0_171\/lib\/rt.jar&lt;java.rmi(Remote.class[Remote" modifiers="1537" timestamp="1531701859085"/>
+<typeInfo handle="=java_20180731/src&lt;chapter08{RemoteControl.java[RemoteControl" modifiers="513" timestamp="1533003233150"/>
+<typeInfo handle="=java_20180731/src&lt;chapter08{Searchable.java[Searchable" modifiers="513" timestamp="1533002837156"/>
+<typeInfo handle="=java_20180731/src&lt;chapter08{Tire.java[Tire" modifiers="513" timestamp="1533011002892"/>
+<typeInfo handle="=java_20180731/src&lt;chapter08{Vehicle.java[Vehicle" modifiers="513" timestamp="1533012342754"/>
+<typeInfo handle="=java_20180731/src&lt;chapter08{InterfaceB.java[InterfaceB" modifiers="513" timestamp="1533014408128"/>
+<typeInfo handle="=java_20180731/src&lt;chapter08{InterfaceA.java[InterfaceA" modifiers="513" timestamp="1533014380358"/>
+<typeInfo handle="=java_20180801/src&lt;chapter09{Button.java[Button[OnClickListener" modifiers="512" timestamp="1533090379781"/>
+<typeInfo handle="=libra/src\/main\/java&lt;edu.iot.libra.service{ScheduleService.java[ScheduleService" modifiers="513" timestamp="1533888138747"/>
+<typeInfo handle="=libra/C:\/Program Files\/Java\/jre1.8.0_171\/lib\/rt.jar&lt;java.util.concurrent(ScheduledExecutorService.class[ScheduledExecutorService" modifiers="1537" timestamp="1531701859085"/>
+<typeInfo handle="=libra/src\/main\/java&lt;edu.iot.libra.command{Command.java[Command" modifiers="513" timestamp="1533690601115"/>
+<typeInfo handle="=Common/src&lt;edu.iot.common.util{Menu.java[Menu" modifiers="1025" timestamp="1534120078528"/>
+<typeInfo handle="=scorpio/src\/main\/java&lt;edu.iot.scorpio.service{TourSpotService.java[TourSpotService" modifiers="513" timestamp="1534204942381"/>
+<typeInfo handle="=scorpio/C:\/Program Files\/Java\/jre1.8.0_171\/lib\/rt.jar&lt;java.lang(Comparable.class[Comparable" modifiers="1537" timestamp="1531701859085"/>
+<typeInfo handle="=java_part3/C:\/Program Files\/Java\/jre1.8.0_171\/lib\/rt.jar&lt;java.io(Serializable.class[Serializable" modifiers="1537" timestamp="1531701859085"/>
+<typeInfo handle="=scorpio/src\/main\/java&lt;edu.iot.scorpio.service{TourPlanService.java[TourPlanService" modifiers="513" timestamp="1534232510768"/>
+<typeInfo handle="=Common/src&lt;edu.iot.common.command{Command.java[Command" modifiers="513" timestamp="1534120265980"/>
+<typeInfo handle="=jdbc_test/src\/main\/java&lt;edu.iot.jdbc_test.dao{CrudDao.java[CrudDao" modifiers="513" timestamp="1536297706642"/>
+<typeInfo handle="=jdbc_test/C:\/Program Files\/Java\/jre1.8.0_171\/lib\/rt.jar&lt;com.oracle.webservices.internal.api.message(MessageContextFactory$Creator.class[Creator" modifiers="1050122" timestamp="1531701859085"/>
+<typeInfo handle="=jdbc_test/src\/main\/java&lt;edu.iot.jdbc_test.dao{EmployeeDao.java[EmployeeDao" modifiers="513" timestamp="1536298551572"/>
+<typeInfo handle="=jdbc_test/src\/main\/java&lt;edu.iot.jdbc_test.dao{RandomDao.java[RandomDao" modifiers="513" timestamp="1536304878746"/>
+<typeInfo handle="=sagittarius/src\/main\/java&lt;edu.iot.sagittarius.dao{MemberDao.java[MemberDao" modifiers="513" timestamp="1536640033242"/>
+<typeInfo handle="=sagittarius/C:\/Program Files\/Java\/jre1.8.0_171\/lib\/rt.jar&lt;java.lang.reflect(Member.class[Member" modifiers="1537" timestamp="1531701859085"/>
+<typeInfo handle="=sagittarius/src\/main\/java&lt;edu.iot.sagittarius.dao{FamousSayingDao.java[FamousSayingDao" modifiers="513" timestamp="1536640033192"/>
+<typeInfo handle="=Common/src&lt;edu.common.dao{CrudDao.java[CrudDao" modifiers="513" timestamp="1536640033380"/>
+<typeInfo handle="=Common/src&lt;edu.common.dao{PaginationDao.java[PaginationDao" modifiers="513" timestamp="1536640033434"/>
+<typeInfo handle="=jdbc_test/C:\/Program Files\/Java\/jre1.8.0_171\/lib\/rt.jar&lt;java.util(RandomAccess.class[RandomAccess" modifiers="1537" timestamp="1531701859085"/>
+<typeInfo handle="=Common/src&lt;edu.common.dao{RandomDao.java[RandomDao" modifiers="513" timestamp="1536640033327"/>
+<typeInfo handle="=Common/src&lt;edu.iot.common.ui{Pagination.java[Pagination" modifiers="1" timestamp="1534141550483"/>
+<typeInfo handle="=sagittarius2/src\/main\/java&lt;edu.iot.sagittarius2.dao{GalleryDao.java[GalleryDao" modifiers="513" timestamp="1536650100004"/>
+<typeInfo handle="=java_part3/C:\/Program Files\/Java\/jre1.8.0_171\/lib\/rt.jar&lt;java.lang(Thread.class[Thread" modifiers="33" timestamp="1531701859085"/>
+<typeInfo handle="=java_part3/src\/main\/java&lt;echo{WorkThread.java[WorkThread" modifiers="1025" timestamp="1536737488925"/>
+</typeInfoHistroy>

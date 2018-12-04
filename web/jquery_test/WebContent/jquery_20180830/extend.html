@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script>
+$(function(){
+	var target = {
+			name: '김상형',
+			age : 29
+	};
+	
+	var obj = {
+			age :35,
+			height : 180,
+			weight : 65
+	};
+	
+	var t =	$.extend({},target,obj);
+	console.log(target);
+	console.log(obj);
+	console.log(t);
+	console.log(t == target);
+	
+});
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src = "hscroll.js"></script>
+<script>
+$(function(){
+		var news = [
+			'뉴스1',
+			'뉴스2',
+			'뉴스3',
+			'뉴스4'
+		];
+		$('.h-scroll').hScroll(news);
+	
+});
+</script>
+</head>
+<body>
+<div class ="container">
+	<div class = "h-scroll"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script>
+$(function(){
+	$('#btn1').click(function(){
+		$('h1').animate({left : '+=100' })
+		.queue(function(){
+			$(this).css('color','red').dequeue();
+		})
+		.animate({left:'-=100'})
+		.queue(function(){
+			$(this).css('color','black').dequeue();
+		})
+	})
+});
+</script>
+</head>
+<body>
+	<button type="button" id="btn1">start</button>
+	<hr />
+	<h1 style="position:relative">애니메이션 대상</h1>
+</body>
+</html>

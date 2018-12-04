@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script>
+$(function(){
+	$('li:first,li:last').css('background','yellow');
+	$('li:eq(5)').css('background','red');
+	$('li:lt(4)').css('font-weight','bold');
+});
+</script>
+</head>
+<body>
+	<ul>
+		<li>one
+		<li>two
+		<li>three
+		<li>four
+		<li>five
+		<li>six
+		<li>seven
+		<li>eight
+		<li>nine
+	</ul>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="hello"/>
+<aop-project name="TeamProject"/>
+<aop-project name="TilesTest"/>
+<aop-project name="HelloWorld"/>
+<aop-project name="MyBatisTest"/>
+<aop-project name="SpringCommon"/>
+<aop-project name="di_test02"/>
+<aop-project name="MyMvcTemplate"/>
+<aop-project name="di_test"/>
+<aop-project name="controllerTest"/>
+<aop-project name="Aquarius"/>
+</aop-reference-model>

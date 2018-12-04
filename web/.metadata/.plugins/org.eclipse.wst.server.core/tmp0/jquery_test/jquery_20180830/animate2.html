@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script>
+$(function(){
+	$('body').keydown(function(e){
+		console.log(e.key); //e.keyCode는 코드
+		switch(e.key){
+		case 'ArrowLeft' :
+			$('img').animate({left:'-=100'},'fast');
+			break;		
+		case 'ArrowRight':
+			$('img').animate({left:'+=100'},'fast');
+			break;
+		case 'ArrowUp':
+			$('img').animate({top:'-=100'},'fast');
+			break;
+		case 'ArrowDown':
+			$('img').animate({top:'+=100'},'fast');
+			break;
+			}
+		})
+});
+</script>
+</head>
+<body>
+
+	<hr />
+	<img src = "../images/Penguins.jpg" width="100" height ="100"style="position:relative">
+</body>
+</html>

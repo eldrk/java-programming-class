@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<link href="bower_components/lightbox2/dist/css/lightbox.min.css" rel="stylesheet">
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/lightbox2/dist/js/lightbox.min.js"></script>
+<script src="lightbox.js"></script>
+<script>
+
+$(function(){
+	var images = [
+		'Chrysanthemum.jpg',
+		'Desert.jpg',
+		'Hydrangeas.jpg',
+		'Jellyfish.jpg',
+		'Koala.jpg',
+		'Lighthouse.jpg',
+		'Penguins.jpg',
+		'Tulips.jpg'
+	];
+	
+	$('#image-panel').lightbox({images:images});
+	var boxname = 'image-set1'
+	$('#image-panel').lightbox({
+		images : images,
+		boxname: 'image-set1'
+	});
+	
+
+	
+});
+</script>
+</head>
+<body>
+
+	<div class = "container">
+		<h1>이미지 갤러리</h1>
+		<div id="image-panel"></div>
+		
+		
+	</div>
+</body>
+</html>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;CharacterEncodingFilter.java&apos; to &apos;chapter04/src/edu.iot.chapter04.filter&apos;&#x0D;&#x0A;- Original project: &apos;chapter03&apos;&#x0D;&#x0A;- Destination element: &apos;chapter04/src/edu.iot.chapter04.filter&apos;&#x0D;&#x0A;- Original element: &apos;edu.iot.chapter03.filter.CharacterEncodingFilter.java&apos;" description="Copy compilation unit" destination="=chapter04/src&lt;edu.iot.chapter04.filter" element1="/src&lt;edu.iot.chapter03.filter{CharacterEncodingFilter.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1536822909013" units="1" version="1.0"/>
+</session>

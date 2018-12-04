@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/main.css">
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/popper.js/dist/umd/popper.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/common.js"></script>
+<script>
+$(function(){
+	$('.jumbotron').load('common/header.html');
+	$('nav').load('common/menu.html');
+	
+});
+</script>
+</head>
+<body>
+	<div class ="container">
+		<div	class="jumbotron text-white py-4 mb-0 rounded-0"></div>
+		<nav class = "navbar navbar-expand-sm bg-primary navbar-dark sticky-top"></nav>
+	</div>
+</body>
+</html>

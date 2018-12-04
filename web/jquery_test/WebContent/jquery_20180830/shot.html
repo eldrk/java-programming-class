@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<style>
+	.shot{
+		position : absolute;
+		background: navy;
+		width:20px;
+		height:20px;
+		border-radius: 50%;
+		z-index:100;
+	}
+
+</style>
+<script>
+$(function(){
+	setInterval(function(){
+		$('<img>',{width:'100px',src:'../images/독수리.jpg'})
+				.css('position','absolute')
+				.appendTo('body')
+				.animate({left:'100%'}, 3000, function(){
+					$(this).remove();
+				})
+		.one('click',function(){
+			$(this).stop()
+			.animate({top:'100%'},3000,function(){
+				$(this).remove();
+			});
+		});	
+	},1000);
+	$(document).mousemove(function(e){
+		//console.log(e.clientX, e.clientY);
+		$('#gun').css({
+			left:e.clientX-10,
+			top :e.clientY-10
+		});
+		
+	});
+	
+	$(document).click(function(e){
+		$('<div>')
+				.addClass('shot')
+				.css({left:e.clientX-10, top:e.clientY-10})
+				.appendTo('body')
+				.animate({top:'0%'},3000,'linear',function(){
+					$(this).remove();
+				});
+	});
+	
+});
+</script>
+</head>
+<body>
+	<div id= "gun" class="shot"></div>
+</body>
+</html>

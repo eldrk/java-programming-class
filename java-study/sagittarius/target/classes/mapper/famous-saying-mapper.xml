@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="edu.iot.sagittarius.dao.FamousSayingDao">
+
+	<select id="count" resultType="int"><![CDATA[
+		select count(*) from famous_saying
+	]]></select>
+	
+	<select id="getList" resultType="famousSaying"><![CDATA[
+		select * from famous_saying
+	]]></select>
+	
+	<select id="findById" parameterType="Long" resultType="famousSaying">
+	<![CDATA[
+		select * from famous_saying 
+		where id=#{id}
+	]]></select>
+	
+	<insert id="insert" parameterType="famousSaying"><![CDATA[
+		insert into famous_saying (
+			id, statement, who
+		)
+		values(
+			famous_saying_seq.nextval, #{statement}, #{who}
+		)
+	]]></insert>
+	
+	<update id="update" parameterType="famousSaying"><![CDATA[
+		update famous_saying set
+			statement = #{statement},
+			who=#{who}
+		where id=#{id}
+	]]></update>
+	
+	<delete id="delete" parameterType="Long"><![CDATA[
+		delete from famous_saying
+		where id=#{id}
+	]]></delete>
+	
+	<select id="getPage" parameterType="map" resultType="FamousSaying"><![CDATA[
+		select * from fs_pagination_view
+		where seq between #{start} and #{end}
+	]]></select>
+	
+	<select id="random" parameterType="int" resultType="FamousSaying"><![CDATA[
+		SELECT * FROM (
+			SELECT * FROM FAMOUS_SAYING
+			ORDER BY DBMS_RANDOM.RANDOM
+		)WHERE ROWNUM <= #{NUM}
+	]]></select>
+	
+
+</mapper>
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<script type="text/javascript" src="makestudent.js"></script>
+<style>
+	table{
+		border : 1px solid gray;
+		border-collapse: collapse;
+	}
+	th,td{
+		border: 1px solid gray;
+	}
+	tbody td{
+		text-align : right;
+		padding-right : 5px;
+	}
+	tbody td:first-child{
+		text-align:center;
+	}
+	tbody>tr:nth-child(2n+1){
+		background-color: light gray;
+	}
+	tbody>tr:nth-child(2n){
+		background-color: white;
+	}
+	tbody>tr:hover{
+		color :white;
+		background-color: navy;
+	}
+	tbody>tr:last-child{
+		color:black;
+		background-color: white;
+	}
+	
+</style>
+</head>
+
+<body>
+	<h1>학생 성적표</h1>
+	<script>
+		document.write(scoreTable);
+	</script>
+</body>
+</html>

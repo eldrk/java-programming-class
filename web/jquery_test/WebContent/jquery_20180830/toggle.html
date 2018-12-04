@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script>
+$(function(){
+	$('#btn1').click(function(){$('img').toggle('slow');});
+	$('#btn2').click(function(){$('img').slideToggle('slow');});
+	$('#btn3').click(function(){$('img').fadeToggle('slow');});
+});
+</script>
+</head>
+<body>
+	<button type="button" id="btn1">hide/show</button>
+	<button type="button" id="btn2">slide</button>
+	<button type="button" id="btn3">fade</button>
+	<hr />
+	<img src = "../images/Hydrangeas.jpg">
+	<hr />
+</body>
+</html>

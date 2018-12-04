@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+	<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="edu.iot.sagittarius2.dao.GalleryDao">
+
+	<select id="count" resultType="int"><![CDATA[
+		select count(*) from gallery
+	]]></select>
+	
+	<select id="getList" resultType="Gallery"><![CDATA[
+		select * from gallery
+	]]></select>
+	
+	<select id="findById" parameterType="Long" resultType="Gallery">
+	<![CDATA[
+		select * from gallery 
+		where id = #{id}
+	]]></select>
+	
+	<insert id="insert" parameterType="Gallery"><![CDATA[
+		insert into gallery (
+			id, title, description, file_name, file_size, image, thumb
+		)
+		values(
+			gallery_seq.nextval, #{title}, #{description},
+			#{fileName}, #{fileSize}, #{image}, #{thumb}
+		)
+	]]></insert>
+	
+	<update id="update" parameterType="Gallery"><![CDATA[
+		update gallery set
+			title = #{title},
+			description = #{description},
+			update_date = sysdate
+		where id=#{id}
+	]]></update>
+	
+	<update id="changeImage" parameterType="Gallery"><![CDATA[
+		update gallery set
+			file_Name = #{fileName},
+			file_size = #{fileSize},
+			image = #{image},
+			thumb = #{thumb},
+			update_date = sysdate
+		where id=#{id}
+	]]></update>
+	
+	<delete id="delete" parameterType="Gallery"><![CDATA[
+		delete from gallery
+		where id = #{id}
+	]]></delete>
+	
+	<select id="getPage" parameterType="map" resultType="Gallery"><![CDATA[
+		select * from (
+			select
+				row_number() over (order by id desc) as seq,
+				id, title, description, file_name,
+				reg_date, update_date
+			from gallery
+		) 
+		where seq between #{start} and #{end}
+	]]></select>
+	
+	<select id="random" parameterType="int" resultType="Gallery"><![CDATA[
+		select * from (
+			select * from gallery
+			order by dbms_random.random
+		) where rownum <= #{num}
+	]]></select>
+	
+
+</mapper>
+

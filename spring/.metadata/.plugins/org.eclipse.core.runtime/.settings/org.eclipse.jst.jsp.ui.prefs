@@ -1,0 +1,13 @@
+SCRIPT_AREA_BORDER=\#444444 | null | null | null | null | null
+commentBorder=\#17608F | null | null | null | null | null
+commentText=\#17608F | null | null | null | null | null
+eclipse.preferences.version=1
+jsp_content=\#000000 | null | null | null | null | null
+newFileTemplateName=New JSP File (html 5)
+newTagFileTemplateName=New Tag File
+org.eclipse.wst.sse.ui.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates><template autoinsert\="true" context\="jsp_tag" deleted\="false" description\="" enabled\="true" name\="form">&lt;form\:form commandName\="${command}"&gt;&\#13;\r\n&lt;/form\:form&gt;</template><template autoinsert\="true" context\="jsp_tag" deleted\="false" description\="" enabled\="true" name\="formtag">&lt;%@ taglib prefix\="form" uri\="http\://www.springframework.org/tags/form" %&gt;</template><template autoinsert\="true" context\="jsp_tag" deleted\="false" description\="" enabled\="true" name\="input">&lt;form\:input path\="${path}"/&gt;&\#13;\r\n&lt;form\:errors path\="${path}" element\="div" cssClass\="error"/&gt;</template><template autoinsert\="true" context\="jsp_tag" deleted\="false" description\="" enabled\="true" name\="password">&lt;form\:input path\="password"/&gt;&\#13;\r\n&lt;form\:errors path\="password" element\="div" cssClass\="error"/&gt;</template></templates>
+overriddenByCSS=,SCRIPT_AREA_BORDER,tagBorder,tagAttributeValue,tagAttributeEquals,jsp_content,commentBorder,tagAttributeName,commentText,
+tagAttributeEquals=\#000000 | null | null | null | null | null
+tagAttributeName=\#688046 | null | null | null | null | null
+tagAttributeValue=\#92679A | null | null | null | null | null
+tagBorder=\#444444 | null | null | null | null | null

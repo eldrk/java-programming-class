@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/popper.js/dist/umd/popper.min.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="pagination.js"></script>
+<style>
+.jumbotron{
+	background-image: url('../images/Lighthouse.jpg');
+	background-size: 100% 250px;
+}
+</style>
+<script>
+$(function(){
+	$('.pagination').pagination({
+					total:10, 
+					active:2,
+					callback : console.log				
+	});
+});
+</script>
+</head>
+<body>
+<div class = "jumbotron text-white py-4 mb-0">
+	<h1>Scorpio</h1>
+	<p>쉼표가 있는 삶, 즐거운 여행을 위하여...</p>
+</div>
+
+
+	<div class="container">
+		<div class="row mt-4">
+			<div class="col -md-2">
+			<div class="col -md-10">
+				<div class="progress-bar"></div>
+			</div>
+			</div>
+			<div class = "col-md-10">
+			</div>
+			
+			<nav class="navbar navbar-expand-sm bg-light"> 
+				<ul class="navbar-nav"> 
+					<li class="nav-item"> 
+						<a class="nav-link" href="#">Link 1</a> 
+					</li> 
+					<li class="nav-item"> 
+						<a class="nav-link" href="#">Link 2</a> 
+					</li> 
+					<li class="nav-item"> 
+						<a class="nav-link" href="#">Link 3</a> 
+					</li> 
+				</ul>
+			</nav>
+		</div>
+	</div>
+</body>
+</html>

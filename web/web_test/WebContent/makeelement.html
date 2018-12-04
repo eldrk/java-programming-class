@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script>
+$(function(){
+	var elem = $('<p>실행중에 만든 엘리먼트입니다.</p>');
+	
+	var div = $('div');
+	console.log(div);//배열
+	//elem.appendTo('div');
+	elem.appendTo(div[1]);
+	//elem.appendTo(div.get(1));
+});
+</script>
+</head>
+<body>
+	<h1>제목입니다</h1>
+	<div id="content">
+	</div>
+	<p>내용입니다</p>
+	<div>
+		내용입니다.
+	</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=di_test/src\/main\/java&lt;service{ArticleWriteService.java[ArticleWriteService" modifiers="513" timestamp="1538359888723"/>
+<typeInfo handle="=di_test/src\/main\/java&lt;dao{ArticleDao.java[ArticleDao" modifiers="513" timestamp="1538359920505"/>
+<typeInfo handle="=controllerTest/C:\/Program Files\/Java\/jre1.8.0_171\/lib\/rt.jar&lt;java.lang(Exception.class[Exception" modifiers="33" timestamp="1531701859085"/>
+<typeInfo handle="=controllerTest/src\/main\/java&lt;edu.iot.controller_test.service{AccountService.java[AccountService" modifiers="513" timestamp="1538446004279"/>
+<typeInfo handle="=SpringCommon/src\/main\/java&lt;edu.iot.common.service{GalleryService.java[GalleryService" modifiers="513" timestamp="1539318652201"/>
+<typeInfo handle="=Aquarius/C:\/Users\/student\/.m2\/repository\/org\/springframework\/spring-webmvc\/4.1.7.RELEASE\/spring-webmvc-4.1.7.RELEASE.jar&lt;org.springframework.web.servlet.view(AbstractView.class[AbstractView" modifiers="1057" timestamp="1538722062428"/>
+<typeInfo handle="=SpringCommon/src\/main\/java&lt;edu.iot.common.service{BoardService.java[BoardService" modifiers="513" timestamp="1539657448595"/>
+<typeInfo handle="=Aquarius/C:\/Users\/student\/.m2\/repository\/org\/springframework\/spring-webmvc\/4.1.7.RELEASE\/spring-webmvc-4.1.7.RELEASE.jar&lt;org.springframework.web.servlet.handler(HandlerInterceptorAdapter.class[HandlerInterceptorAdapter" modifiers="1057" timestamp="1538722062428"/>
+<typeInfo handle="=SpringCommon/src\/main\/java&lt;edu.iot.common.service{RestaurantService.java[RestaurantService" modifiers="513" timestamp="1540449389486"/>
+<typeInfo handle="=SpringCommon/src\/main\/java&lt;edu.iot.common.service{TourService.java[TourService" modifiers="513" timestamp="1540196488367"/>
+<typeInfo handle="=SpringCommon/src\/main\/java&lt;edu.iot.common.dao{CrudDao.java[CrudDao" modifiers="513" timestamp="1540188655062"/>
+<typeInfo handle="=SpringCommon/src\/main\/java&lt;edu.iot.common.service{PlanService.java[PlanService" modifiers="513" timestamp="1540188284306"/>
+<typeInfo handle="=SpringCommon/src\/main\/java&lt;edu.iot.common.service{ReplyService.java[ReplyService" modifiers="513" timestamp="1540358314586"/>
+<typeInfo handle="=SpringCommon/src\/main\/java&lt;edu.iot.common.dao{ReplyDao.java[ReplyDao" modifiers="513" timestamp="1540361977321"/>
+<typeInfo handle="=SpringCommon/src\/test\/java&lt;{BaseDaoTest.java[BaseDaoTest" modifiers="1" timestamp="1540514861095"/>
+<typeInfo handle="=SpringCommon/src\/test\/java&lt;{BaseTest.java[BaseTest" modifiers="1" timestamp="1540514580198"/>
+<typeInfo handle="=SpringCommon/src\/test\/java&lt;{BaseServiceTest.java[BaseServiceTest" modifiers="1" timestamp="1540518744092"/>
+<typeInfo handle="=Aquarius/src\/test\/java&lt;edu.iot.app.test{BaseMvcTest.java[BaseMvcTest" modifiers="1" timestamp="1540538178731"/>
+</typeInfoHistroy>

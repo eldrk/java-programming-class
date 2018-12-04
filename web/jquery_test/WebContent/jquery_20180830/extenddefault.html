@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script>
+$(function(){
+	function DoSomething(option){
+		option = $.extend({
+			name : '김상형',
+			age : 29,
+			
+		},option);
+		
+		document.write("이름 : " +option.name+
+				", 나이 :" +option.age + "<br>")
+	}
+	
+	DoSomething();
+	DoSomething({name:"이순신",age:45});
+});
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+.avata-sm {
+	width: 25px;
+	height: 25px;
+}
+
+.avata-md {
+	width: 50px;
+	height: 50px;
+}
+
+.avata-lg {
+	width: 75px;
+	height: 75px;
+}
+
+.bg-base{
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg1{
+	background-image: url("../image/4.jpg");
+}
+.bg2{
+	background-image: url("../image/room3.jpg");
+}
+.bg3{
+	background-image: url("../image/food5.jpg");
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script>
+$(function(){
+	$('#btn1').click(function(){$('img').hide('slow')});
+	$('#btn2').click(function(){$('img').show('slow')});
+	$('#btn3').click(function(){$('img').slideUp('slow')});
+	$('#btn4').click(function(){$('img').slideDown('slow')});
+	$('#btn5').click(function(){$('img').fadeOut('slow')});
+	$('#btn6').click(function(){$('img').fadeIn('slow')});
+	$('#btn7').click(function(){$('img').fadeTo('slow',0.3)});
+	$('#btn8').click(function(){//비동기함수 바로return
+		$('img').hide('slow',function(){
+			console.log(this);
+			$('img').attr('src','../images/Tulips.jpg');
+			$('img').show('slow');
+			
+				});
+		});
+});
+</script>
+</head>
+<body>
+	<button type = "button" id = "btn1">hide</button>
+	<button type = "button" id = "btn2">show</button>
+	<button type = "button" id = "btn3">slide up</button>
+	<button type = "button" id = "btn4">slide down</button>
+	<button type = "button" id = "btn5">fade out</button>
+	<button type = "button" id = "btn6">fade in</button>
+	<button type = "button" id = "btn7">fade To</button>
+	<button type = "button" id = "btn8">Hide And Show</button>
+	<hr />
+	<img src = "../images/Desert.jpg" width="400">
+	<hr />
+	
+</body>
+</html>

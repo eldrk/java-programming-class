@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/main.css">
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/popper.js/dist/umd/popper.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/common.js"></script>
+<script>
+$(function(){
+		
+	$.get('data/famoussaying.json',function(data){
+		var ix = random(data.length);
+		var saying=data[ix];
+		console.log(saying);
+		$('.blockquote p').text(saying.statement);
+		$('.blockquote-footer').text(saying.who);
+	});
+	
+	var list;
+	
+	function loadDeck(){
+		list.forEach(item=>{
+			var str=`<div class="col-md-4 mb-3">
+				<div class="card shadow bg-white">
+				<img class="card-img-top" src="${item.images[0]}">
+				<div class="card-body">
+					<h4 class="card-title">
+					<a href="spot-view.html?id=${item.id-1}"><small>${item.title}</small></a><br>
+					<small>${item.region}</small>
+					</h4>
+					<p class="card-text">${item.content.substr(0,50)}</p>
+					<a class ="card-link" href="${item.homePage}" target="_blank"></a>
+				</div>
+			</div>
+		</div>`;
+			$('.card-deck').append(str);
+		})
+	}
+
+	$.get('data/top100.json',function(data){
+		list = data.shuffle().slice(0,12);
+		loadDeck();
+	})
+	
+});
+</script>
+</head>
+<body>
+	<div class ="container">
+		<div	class="jumbotron text-white py-4 mb-0 rounded-0"></div>
+		<nav class = "navbar navbar-expand-sm bg-primary navbar-dark sticky-top"></nav>
+		
+	
+		<div class="card saying-panel p-3 my-3 rounded">
+		<h2>오늘의 명언</h2>
+			<blockquote class="card-body blockquote">
+				<p></p>
+			</blockquote>
+				
+		</div>
+		
+		<h2 class="text-center my-3">추천여행지</h2>
+		
+		<div class = "row card-deck"></div>
+		</div>
+</body>
+</html>
